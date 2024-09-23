@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Scratch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{
+            background-color: linear;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #rd{
+            display: inline;
+        }
+        #rd:hover{
+            cursor: pointer;                        
+        }
+
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .game {
+            background-color: #3c4043;
+            border: 2px solid #61dafb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: calc(30% - 30px);
+            text-align: center;
+            transition: transform 0.3s;
+            height: auto; /* Permite que a altura se ajuste */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alinha o conteúdo no topo */
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+        }
+
+        .game h2 {
+            font-size: 1.5em;
+        }
+
+        .game p {
+            margin: 10px 0; /* Espaçamento entre o título e a descrição */
+        }
+
+        .game a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 900px) {
+            .game {
+                width: calc(45% - 30px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .game {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Jogos do Scratch desenvolvido para FETEC</h1>
+    </header>
+    <main>
+        <div class="game-container">
+            <div class="game" id="game1">
+                <h2>Minecraft</h2>
+                <p>Minecraft é um jogo de construção e aventura em um mundo aberto. Explore, colete recursos e construa estruturas, enfrentando criaturas no modo sobrevivência ou criando livremente no modo criativo. Aprecie a liberdade e a criatividade enquanto joga sozinho ou com amigos!</p>
+                <a href="https://scratch.mit.edu/projects/1066994031/embed" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game2">
+                <h2>Tetris</h2>
+                <p>Desfrute do clássico Tetris, onde você deve montar as peças.</p>
+                <a href="https://scratch.mit.edu/projects/987654321/" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game3">
+                <h2>Jogo 3</h2>
+                <p>Descrição do Jogo 3.</p>
+                <a href="https://scratch.mit.edu/projects/192837465/" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game4">
+                <h2>Jogo 4</h2>
+                <p>Descrição do Jogo 4.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game5">
+                <h2>Jogo 5</h2>
+                <p>Descrição do Jogo 5.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game6">
+                <h2>Jogo 6</h2>
+                <p>Descrição do Jogo 6.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game7">
+                <h2>Jogo 7</h2>
+                <p>Descrição do Jogo 7.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game8">
+                <h2>Jogo 8</h2>
+                <p>Descrição do Jogo 8.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game9">
+                <h2>Jogo 9</h2>
+                <p>Descrição do Jogo 9.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game10">
+                <h2>Jogo 10</h2>
+                <p>Descrição do Jogo 10.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game11">
+                <h2>Jogo 11</h2>
+                <p>Descrição do Jogo 11.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game12">
+                <h2>Jogo 12</h2>
+                <p>Descrição do Jogo 12.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game13">
+                <h2>Jogo 13</h2>
+                <p>Descrição do Jogo 13.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game14">
+                <h2>Jogo 14</h2>
+                <p>Descrição do Jogo 14.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+            <div class="game" id="game15">
+                <h2>Jogo 15</h2>
+                <p>Descrição do Jogo 15.</p>
+                <a href="#" target="_blank">Abrir Jogo</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2024 todos os direitos reservados</p>
+        <p>Desenvolvido por: 1°, 2°, 3°, ano do ensino médio</p>
+        <p>Etec Darcy Pereira de Moraes</p>
+        <div class="social-icons">
+            <a id="rd" href="https://www.instagram.com/etecdarcypereira/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a id="rd" href="https://www.facebook.com/etecdpmitapetininga/?locale=pt_BR" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a id="rd" href="https://www.google.com.br/maps/place/Etec+Darcy+Pereira+de+Moraes/@-23.627454,-48.0448651,17z/data=!4m6!3m5!1s0x94c5cba99a9f4e91:0xc97bceb3a2e1cc0d!8m2!3d-23.6274589!4d-48.0422902!16s%2Fg%2F11b6hf8ytq?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fas fa-map-marker-alt"></i> Localização</a>
+        </div>
+    </footer>
+</body>
